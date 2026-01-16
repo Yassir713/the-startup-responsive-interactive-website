@@ -1,7 +1,44 @@
+@font-face {
+    font-family: DIN 2014;
+    src: url(./fonts/din-2014-font-family.zip) format('truetype');
+}
+
 :root {
         --primary-color-main:hsl(208.7, 74.19%, 12.16%);
         --secondary-color-main:hsl(208.31, 63.12%, 27.65%);
         --primary-color-link:hsl(202.73, 61.68%, 58.04%);
+        --primary-color-text:hsl(0, 0%, 100%);
+        
     }
 
-vg
+.logo {
+    width: 125px
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+    
+main {
+    font-family: DIN 2014;
+    color: var(--primary-color-text);
+    width: 100%;
+    background-color: var(--primary-color-main);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+}
