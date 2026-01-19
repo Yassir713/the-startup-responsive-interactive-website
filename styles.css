@@ -1,13 +1,18 @@
 @font-face {
-    font-family: DIN 2014;
-    src: url(./fonts/din-2014-font-family.zip) format('truetype');
+    font-family: DIN2014;
+    src: url(./fonts/din-2014.otf) format('truetype');
+}
+
+body {
+    font-family: DIN2014;
+    margin: 0;
 }
 
 :root {
         --primary-color-main:hsl(208.7, 74.19%, 12.16%);
         --secondary-color-main:hsl(208.31, 63.12%, 27.65%);
         --primary-color-link:hsl(202.73, 61.68%, 58.04%);
-        --primary-color-text:hsl(0, 0%, 100%);
+        --light-text:hsl(0, 0%, 100%);
         
     }
 
@@ -15,11 +20,32 @@
     width: 125px
 }
 
+header {
+    position: relative;        /* zorgt ervoor dat die menu in de header blijft */
+    height: 80px;              /* Vaste hoogte */
+    display: flex;
+    justify-content: center;   /* Logo centreren */
+    align-items: center;
+}
+
+header button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Centreert op de y-as binnen de header */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 1%;
+    padding: 20px;
 }    
 
 nav ul {
@@ -29,16 +55,65 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* button netter */
+button {
+   border:none;
+   background-color:transparent;
+   cursor: pointer;   
+}
+
+:popover-open { 
+	border: none;  /* zwarte default border weg */
+    height: 100%;
+	width: 50%;   /* popover is 50% van de width op website */
+	position: fixed;
+    margin-right: 0px; /* komt rechts */
+}
     
+.close-menu {
+    margin-left: 0px;
+}
+
 main {
     font-family: DIN 2014;
-    color: var(--primary-color-text);
-    width: 100%;
+    color: var(--light-text);
     background-color: var(--primary-color-main);
+    padding-inline: 1%;
 }
 
 .content {
+
+}
+
+.content-article {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: ;
+    flex-direction: row;
+
+}
+
+.content-article-text {
+    width: 50%;
+}
+
+.d3-image {
+    align-self: flex-end;
+    width: 50%;
+}
+
+.assets-image {
+    width: 100%;
+}
+
+
+
+
+
+
+footer{
+    padding-inline: 1%;
 }

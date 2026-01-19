@@ -9,17 +9,24 @@
 <body>
     <header>            
  
-        <nav>          
+         
             <a href="index.html"><img class="logo" src="./assets/logo.png" alt="Logo 270 Degrees"></a>
             
-           <!--  <ul>
+            <button popovertarget="mypopover"><img src="./assets/menu.svg" alt="Menu"></button> <!-- Code voor hamburger menu -->
+        <nav popover id="mypopover">                                                        
+            
+            <button class="close-menu"  popovertarget="mypopover" popovertargetaction="hide"> 
+	         <img src="./assets/close.svg" alt="Close menu">
+            </button>
+            
+            <ul>
               <li><a href="assets.html">Assets</a></li>
               <li><a href="solutions.html">Solutions</a></li>
               <li><a href="cases.html">Cases</a></li>
               <li><a href="about.html">About 270</a></li>
               <li><a href="contact.html">Contact us</a></li>
-            </ul>  -->
-            <button  popovertarget="mypopover"><img src="./assets/menu.svg" alt="Menu"></button> <!-- Code voor hamburger menu -->
+            </ul>     
+
 
         </nav>
 
@@ -27,72 +34,95 @@
 
     <main>
       <h1>270 Degrees</h1>
-      <article>
-        <section class="content">
-            <h2>Viewer</h2>
-            <p>Our viewer displays your products in 3D.
+      <section class="content">
+
+        <article class="content-article">
+            <div class="content-article-text">
+                <h2>Viewer</h2>
+                <p>Our viewer displays your products in 3D.
                Quick, easy, and affordable.
                Your product experience will never be the same.
-            </p>
-            <img src="./assets/3d-test.png" alt="270 Degrees 2026">
-            <ul>
-                <li>Easy to implement</li>
-                <li>Works on all environsments</li>
-                <li>Boost your product experience</li>
-            </ul>
-        </section>
-        <section class="content">
-            <h2>Configurator</h2>
-            <p>People are sensitive for personalization.
-                 Our configurator customizes your products for an optimal personal experience.
-            </p>
-            <img src="./assets/3d-test.png" alt="270 Degrees 2026">
-            <ul>
-                <li>Real time</li>
-                <li>High quality</li>
-                <li>Personalize your assets!</li>
-            </ul>
+                </p>
+                <ul>
+                    <li>Easy to implement</li>
+                    <li>Works on all environments</li>
+                    <li>Boost your product experience</li>
+                </ul>
+            </div>
+            <img class="d3-image" src="./assets/3d-test.png" alt="270 Degrees 2026">
 
-        </section>
-        <section class="content">
-            <h2>Full Experience</h2>
-            <p>Ylour 3D assets can also be used in a fully tailored experience.
-                 We work with the best agencies to design and build such solutions.
-            </p>
-            <img src="./assets/3d-test.png" alt="270 Degrees 2026">
-            <ul>
-                <li>Unique experience</li>
-                <li>Tailor made</li>
-                <li>Distinguish yourself from the competitior</li>
-            </ul>
-        </section>
-      </article>
+        
+        </article>
+        
+        <article class="content-article">
+            <div class="content-article-text">
+                <h2>Configurator</h2>
+                <p>People are sensitive for personalization.
+                    Our configurator customizes your products for an optimal personal experience.
+                </p>
+                <ul>
+                    <li>Real time</li>
+                    <li>High quality</li>
+                    <li>Personalize your assets!</li>
+                </ul>
+            </div>
+            <img class="d3-image" src="./assets/3d-test.png" alt="270 Degrees 2026">
+        </article>
+        
+        <article class="content-article">
+            <div class="content-article-text">
+                <h2>Full Experience</h2>
+                <p>Your 3D assets can also be used in a fully tailored experience.
+                    We work with the best agencies to design and build such solutions.
+                </p>
+                <ul>
+                    <li>Unique experience</li>
+                    <li>Tailor made</li>
+                    <li>Distinguish yourself from the competitior</li>
+                </ul>
+            </div>
+            <img class="d3-image" src="./assets/3d-test.png" alt="270 Degrees 2026">
+
+        </article>
       
-      <article>
-        <section>
+    </section>
+      
+      <section>
+      
+        <article>
         <p>Let's discover together how we can distinguish ourselves from the competition</p>
-        </section>
-      </article>
       
-      <article>
-        <section>
-        <h2>Assets implementation</h2>
+        </article>
+      
+    </section>
+      
+      <section>
+        
+        <article>
+        
+            <h2>Assets implementation</h2>
         <p>Once your assets are created,
              our SaaS solution makes sure that they are safely stored and can be viewed on every platform,
              in all browsers and on any device.
              Fast, easy and without any effort from your side.</p>
         <p>We guarantee a 99,9% availability of your products and make sure that they will stay available over time.</p>
-        <img src="./assets/assets.png" alt="image showing the process how assets are stored">
-        </section>
-      </article>
+        <img class="assets-image" src="./assets/assets.png" alt="image showing the process how assets are stored">
+        
+        </article>
+    
+    </section>
       
-      <article>
-        <section>
+      <section>
+        
+        <article>
         <h4>Give us a call or send us an email</h4>
             <a href="contact.html">Contact us</a>
             <a href="about.html">Learn more about 270 Degrees</a>
-        </section>
-      </article>
+        
+        </article>
+      
+    </section>
+
     </main>
 </body>
 
