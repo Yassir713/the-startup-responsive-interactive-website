@@ -3,6 +3,11 @@
     src: url(./fonts/din-2014.otf) format('truetype');
 }
 
+@font-face {
+    font-family: Andale Mono;
+    src: url(./fonts/andalemo.ttf) format('truetype');
+}
+
 body {
     font-family: DIN2014;
     margin: 0;
@@ -85,13 +90,12 @@ main {
     padding-inline: 1%;
 }
 
-.content {
-
-}
-
 .content-article {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 }
 
