@@ -141,25 +141,64 @@ main {
 }
 
 
+details {
+   margin-bottom: 30px;
 }
 
 .content-article-text {
-    width: 50%;
+    text-align: center;
+    width: 75%;
+    margin: 0px 45px;
 }
+
+    .list-goals li {
+    margin-bottom: 1rem;
+    background: url(.) no-repeat left top;
+    padding: 0px 0 3px 24px;
+}
+
+.arrow {
+    height: 24px;
+    transform: translateY(25%); /* Centreert op de y-as binnen de text */
+}
+
+
 
 .d3-image {
     align-self: flex-end;
-    width: 50%;
+    width: 90%;
 }
 
 .assets-image {
     width: 100%;
 }
 
+.call {
+    background-color: var(--secondary-color-body);
     padding: 30 px;
+}
 
+.contact {
+    display: flex;
+    background-color: var(--secondary-color-main);
+    padding: 30px;
+}
 
+.button1{
+    border: 10px solid var(--primary-color-link);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--dark-text);
+    background-color: var(--primary-color-link);
+}
 
+.button2{
+    border: 10px solid var(--primary-color-main);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--dark-text);
+    background-color: var(--primary-color-main);
+}
 
 
 footer{
