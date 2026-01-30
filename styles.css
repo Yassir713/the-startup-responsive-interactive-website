@@ -24,6 +24,38 @@ body {
     }
 
 /* Responsive font sizes */
+h1 {
+  font-size: clamp(64px, 6vw, 96px);
+  font-weight: bold;
+  letter-spacing: 0.03em; /* 3% */
+}
+
+h2 {
+  font-size: clamp(48px, 5vw, 72px);
+  letter-spacing: 0.03em; /* 3% */
+}
+
+h3 {
+  font-size: clamp(32px, 4vw, 64px);
+  letter-spacing: 0.03em; /* 3% */
+}
+
+h4 {
+  font-size: clamp(32px, 2,5vw, 48px);
+  letter-spacing: 0.03em; /* 3% */
+}
+
+p {
+    font-weight: light;
+    font-size: clamp(16px, 0.8rem + 1vw, 24px);
+}
+
+details p {
+    font-family: Andale Mono;
+    font-size: clamp(16px, 0.8rem + 1vw, 24px);
+}
+
+
 .logo {
     width: 125px
 }
