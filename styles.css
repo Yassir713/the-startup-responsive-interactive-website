@@ -80,23 +80,22 @@ header button {
 
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 1%;
+
+
 }    
 
 nav ul {
     width: 50%;
-    display: flex;
-    justify-content: space-evenly;
     list-style: none;
 }
 
-nav ul li {
+nav ul li a {
     text-decoration: none;
-    list-style: none;
+    color: var(--dark-text);
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* button netter */
@@ -106,13 +105,23 @@ button {
    cursor: pointer;   
 }
 
-:popover-open { 
-	border: none;  /* zwarte default border weg */
-    height: 100%;
-	width: 50%;   /* popover is 50% van de width op website */
-	position: fixed;
-    margin-right: 0px; /* komt rechts */
+nav[popover] {
+    display: none;
+    
 }
+
+nav:popover-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border: none;
+    inset: 0 0 0 auto; /* rechts */
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--secondary-color-main);
+}
+
     
 .close-menu {
     margin-left: 0px;
